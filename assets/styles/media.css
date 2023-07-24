@@ -1,0 +1,137 @@
+@media (max-width:1199.99px) {
+
+    .films__content-cards-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    
+    .throne__descr{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:991.99px) {}
+
+@media (max-width:767.99px) {
+    .nav {
+        position: relative;
+    }
+
+    .nav__list {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        top: -300px;
+        align-items: flex-end;
+        padding: 15px;
+        background: var(--blackColor);
+        transition: .3s;
+        z-index: 5;
+    }
+
+    .nav__menu-btn {
+        display: flex;
+    }
+
+    .nav__menu:hover .nav__menu-btn-line {
+        transform: rotate(90deg);
+    }
+
+    .nav__menu:hover .nav__menu-btn-line::before {
+        transform: rotate(45deg);
+        right: -4px;
+        top: -5px;
+    }
+
+    .nav__menu:hover .nav__menu-btn-line::after {
+        transform: rotate(-45deg);
+        right: -4px;
+        top: 5px;
+    }
+
+    .nav__menu:hover .nav__list {
+        top: 100%;
+    }
+
+    .nav__list-link::after {
+        bottom: -5px;
+    }
+
+    .intro__content-title {
+        font-size: 52px;
+        text-align: center;
+    }
+
+    .intro__content-descr {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .intro__content-btns-group {
+        justify-content: center;
+    }
+
+    .video__section-content img {
+        max-width: 100%;
+    }
+
+    .video__section {
+        background: linear-gradient(90deg, rgb(222, 247, 255, 50%) 0%, rgb(244, 252, 255, 0) 45.31%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .video__section-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .series__collection{
+        grid-template-columns: 100%;
+    }
+    
+    .collection__item:nth-of-type(1) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+}
+
+@media (max-width:575.99px) {
+
+    .intro__content-title {
+        font-size: 40px;
+    }
+
+    .primary__btn {
+        padding: 15px 24px;
+        font-size: 12px;
+    }
+
+    .intro {
+        min-height: 600px;
+    }
+
+    .films__content-card {
+        max-width: 100%;
+    }
+
+    .video__section-content-descr {
+        font-size: 16px;
+        margin: 25px 0;
+        line-height: 22px   ;
+    }
+    
+    .footer__descr{
+        font-size: 14px;
+    }
+    
+    .footer__store{
+        gap: 10px;
+    }
+}
